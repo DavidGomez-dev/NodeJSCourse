@@ -26,7 +26,7 @@ module.exports = requestHandler = (req, res) => {
       res.write(list);
       return res.end();
 
-    case "/create-user":
+    case "/create-user" && method == "POST":
       const body = [];
       req
         .on("data", (chunk) => {
