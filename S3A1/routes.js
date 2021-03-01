@@ -5,7 +5,7 @@ module.exports = requestHandler = (req, res) => {
     case "/":
       res.setHeader("Content-Type", "text/html");
       res.statusCode = 200;
-      res.write("<html><head><head><body>Input your username");
+      res.write("<html><head><head><body>Input your username, please User");
       res.write(
         '<form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Send</button></form>'
       );
