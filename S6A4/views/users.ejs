@@ -1,0 +1,22 @@
+<%- include('includes/head.ejs')  %> 
+  <body>
+    <div class="main-div">
+      <% if (users.length>0) { %>
+      <div class="main-div__title"><h1>These are the users</h1></div>
+      <div class="main-div__form">
+        <ul class="main-div__list">
+          <% users.forEach(user => { %>
+          <li class="main-div__list_item">
+            <%= user.lastName %>, <%= user.firstName %> (<%= user.sex %>)
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+      <% } else {%>
+      <div class="main-div__title"><h1>There are not users yet</h1></div>
+
+      <% }%>
+      <%- include('includes/navigation.ejs')  %> 
+    </div>
+  </body>
+</html>

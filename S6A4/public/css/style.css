@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+  --shadow-color: rgb(0, 255, 34);
+}
+
+* {
+  font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.main-div {
+  margin: 1rem auto;
+  padding: 0;
+  width: 100%;
+  max-width: 25rem;
+  min-height: 30rem;
+  background-color: white;
+  box-shadow: 10px 10px 0px 0px var(--shadow-color);
+}
+
+.main-div__title {
+  height: 10rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+}
+
+.main-div__form {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.main-div__list_item,
+input,
+button {
+  display: block;
+  margin: 1rem auto;
+  box-shadow: 2px 2px 0px 0px black;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.main-div__list_item {
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+.main-div__form ul {
+  margin: 1rem;
+  padding: 0;
+}
+.main-div__form_radio {
+  text-align: center;
+}
+
+.main-div__form_radio input {
+  display: inline-block;
+  margin: 0;
+  margin: 0 0 0 3rem;
+  vertical-align: middle;
+  box-shadow: 0px 0px 0px 0px white;
+}
+
+.main-div__form_radio label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin: 0 3rem 0 0;
+}
+
+button {
+  background-color: var(--shadow-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgb(191, 191, 191);
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 0px 0px white;
+}
+
+.main-div__explanation {
+  padding: 0.5rem;
+  color: rgb(191, 191, 191);
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.main-div__list {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.main-nav__ul {
+  list-style: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.main-nav__ul_listitem {
+  display: inline-block;
+}
+
+.main-nav__ul_listitem a {
+  text-decoration-color: none;
+  color: inherit;
+}
+
+.main-nav__ul_listitem a:active,
+.main-nav__ul_listitem a.active,
+.main-nav__ul_listitem a:hover {
+  color: var(--shadow-color);
+}

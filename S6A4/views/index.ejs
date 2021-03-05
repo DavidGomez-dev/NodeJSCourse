@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs')  %> 
+  <body>
+    <div class="main-div">
+      <div class="main-div__title"><h1>Please add your name</h1></div>
+      <div class="main-div__form">
+        <form action="/" method="post">
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <div class="main-div__form_radio">
+            <input type="radio" id="sexM" name="sex" value="Male" checked />
+            <label for="sexM">M</label>
+
+            <input type="radio" id="sexF" name="sex" value="Female" />
+            <label for="sexF">F</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <%- include('includes/navigation.ejs')  %> 
+      <p class="main-div__explanation">a Brutalist inspired form</p>
+    </div>
+  </body>
+</html>
